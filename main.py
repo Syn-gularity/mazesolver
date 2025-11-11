@@ -1,6 +1,7 @@
 from graphics import Window, Line, Point
 from cell import Cell
 from maze import Maze
+import random
 
 def main():
     win = Window(800, 600)
@@ -13,7 +14,7 @@ def main():
     c2.draw(75,50,100,75)
     c1.draw_move(c2, True)"""
 
-    maze = Maze(10, 10, 4, 5, 25, 25, win)
+    maze = Maze(10, 10, 4, 5, 25, 25, win, 10)
 
     win.wait_for_close()
     
